@@ -4,7 +4,7 @@ interface SaveFileUseCase {
   execute: (options: Options) => boolean;
 }
 
-interface Options {
+export interface Options {
   base: number;
   fileContent: string;
   filePath?: string;

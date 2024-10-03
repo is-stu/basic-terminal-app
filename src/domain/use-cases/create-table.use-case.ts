@@ -16,7 +16,11 @@ export class CreateTable implements CreateTableUseCase {
     let result = `========================\n MULTIPLICATION TABLE ${base}\n========================\n`;
 
     for (let i = 1; i <= limit; i++) {
-      result += `${i} x ${base} = ${i * base}\n`;
+      result += `${i} x ${base} = ${i * base}`;
+
+      if (i < limit) {
+        result += '\n';
+      }
     }
     return result;
   }
