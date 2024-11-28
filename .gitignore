@@ -2,3 +2,4 @@ node_modules
 outputs
 package-lock.json
 coverage
+test-filePath
